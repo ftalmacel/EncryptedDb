@@ -1,0 +1,18 @@
+[project]
+name = "my-db"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "argparse>=1.4.0",
+    "cryptography>=50.0.1",
+    "pathlib>=1.0.1",
+    "python-dotenv>=1.2.3",
+    "sqlalchemy>=2.0.52",
+]
+
+[dependency-groups]
+dev = ["pytest>=9.1.1"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
